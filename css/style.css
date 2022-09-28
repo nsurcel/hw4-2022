@@ -119,14 +119,14 @@ nav a:focus {
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 
 .skip a {
-  position: absolute;
+  position: fixed;
   top: -40px;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 
 .skip a:focus {
-  position: absolute;
+  position: fixed;
   top: 20px;
 }
 
@@ -248,10 +248,12 @@ first div in the grid  and place it in the grid. */
   
   .method-image {
     grid-column: 3 / span 2;
+    overflow: hidden;
   }
 
   .contact-image {
     grid-column: 3 / span 2;
+    overflow: hidden;
   }
 
   .method {
@@ -264,10 +266,12 @@ first div in the grid  and place it in the grid. */
 
   .about-image {
     grid-column: 2 / span 2;
+    overflow: hidden;
   }
 
   .clients-image {
     grid-column: 2 / span 2;
+    overflow: hidden;
   }
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
